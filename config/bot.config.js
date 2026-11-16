@@ -1,7 +1,7 @@
 const digits = value => String(value || "").replace(/\D/g, "");
 
 const configuredOwnerNumber = digits(process.env.OWNER_NUMBER);
-const ownerNumber = configuredOwnerNumber || "2349060715145";
+const ownerNumber = configuredOwnerNumber || "233548064168";
 const configuredPrefix = process.env.PREFIX;
 const prefix = configuredPrefix === undefined || configuredPrefix === "" ? "." : String(configuredPrefix);
 
@@ -11,7 +11,7 @@ const channel = Object.freeze({
 });
 
 export default Object.freeze({
-  name: String(process.env.BOT_NAME || "FEI XMD").trim() || "FEI XMD",
+  name: String(process.env.BOT_NAME || "Saint-XMD").trim() || "Saint-XMD",
   version: String(process.env.BOT_VERSION || "1.0.0").trim() || "1.0.0",
   prefix,
   ownerName: String(process.env.OWNER_NAME || "Benfei Tech").trim() || "Benfei Tech",
